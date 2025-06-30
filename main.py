@@ -10,8 +10,8 @@ docente2.asignarCursos("Programacion")
 
 #Instanciar alumnos
 alumno1 = Alumno("Jose Carlos",42126123,"josesito@gmail")
-alumno2 = Alumno("Pablob",41345623,"judio@gmail")
-alumno3 = Alumno("Valentin",623,"goku@gmail")
+alumno2 = Alumno("Pablob",41345623,"pablito@gmail")
+alumno3 = Alumno("Valentin",42126284,"valemasut@gmail")
 
 #Instanciar los cursos y asignarles sus docentes y alumnos
 curso1 = Curso("Programacion",123)

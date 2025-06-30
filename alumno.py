@@ -34,12 +34,12 @@ class Alumno(Persona):
     #Saca un promedio de todas las notas del alumno incluyendo tanto parciales como tp y finales.
     def promNotaTotal(self):
         prom = sum(sum(list) for list in self.notas.values())/sum(len(list) for list in self.notas.values())
-        return prom
+        return f"El promedio total del alumno {self.nombre} es: {prom}"
     
     #Calcula el promedio de un tipo de nota especifico
     def promPorTipo(self,tipo):
         if tipo in self.notas:
             prom = sum(self.notas[tipo])/(len(self.notas.values())-1)
-            return prom
+            return f"El promedio del tipo {tipo} del alumno {self.nombre} es: {prom}"
         else:
             return "El tipo no es correcto"
